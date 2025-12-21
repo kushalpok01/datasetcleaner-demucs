@@ -6,6 +6,7 @@ Extract clean vocals from audio files using Demucs with a simple Python script.
 
 - Python 3.10 (recommended)
 - FFmpeg installed and added to PATH
+- YT-DLP added to PATH
 - Demucs
 
 ## Setup
