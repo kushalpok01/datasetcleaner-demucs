@@ -69,4 +69,4 @@ for idx, (chunk_start, chunk_end) in enumerate(chunks):
                 seg_end_ts = seconds_to_str(seg_end)
                 f.write(f"[{seg_start_ts} --> {seg_end_ts}] {sentence.strip()}\n\n")
 
-    print(f"✅ Saved: transcripts/{filename}")
+    print(f"Saved: transcripts/{filename}")

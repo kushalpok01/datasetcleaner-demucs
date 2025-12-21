@@ -2,12 +2,12 @@ import subprocess
 import os
 
 chunks = [
-("00:00:00", "00:40:01"), #chunk0
-("00:40:01", "01:00:40"), #chunk1
-("01:00:40", "02:00:00"), #chunk2
-("02:00:00", "03:00:32"), #chunk3
-("03:00:32", "04:06:23"), #chunk4
-("04:06:23", "05:09:36"), #chunk5
+("00:00:00", "00:40:01"), #chunk000
+("00:40:01", "01:00:40"), #chunk001
+("01:00:40", "02:00:00"), #chunk002
+("02:00:00", "03:00:32"), #chunk003
+("03:00:32", "04:06:23"), #chunk004
+("04:06:23", "05:09:36"), #chunk005
 ]
 
 input_audio = "cleanedaudio.wav"
@@ -27,4 +27,4 @@ for idx, (start, end) in enumerate(chunks):
     ]
 
     subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    print(f"✅ Saved: {out_file}")
+    print(f"Saved: {out_file}")
