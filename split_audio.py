@@ -2,11 +2,15 @@ import subprocess
 import os
 
 chunks = [
-("00:00:00", "02:30:01"),
-("02:30:01", "05:09:36"),
+("00:00:00", "00:40:01"), #chunk0
+("00:40:01", "01:00:40"), #chunk1
+("01:00:40", "02:00:00"), #chunk2
+("02:00:00", "03:00:32"), #chunk3
+("03:00:32", "04:06:23"), #chunk4
+("04:06:23", "05:09:36"), #chunk5
 ]
 
-input_audio = "audio.mp3"
+input_audio = "cleanedaudio.wav"
 os.makedirs("audio_chunks", exist_ok=True)
 
 for idx, (start, end) in enumerate(chunks):

@@ -2,7 +2,7 @@ import subprocess
 import os
 import sys
 
-INPUT_AUDIO = "1sthalf.wav"
+INPUT_AUDIO = "3rdhalf.wav"
 OUTPUT_DIR = "clean_audio"
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -12,7 +12,7 @@ cmd = [
     "--two-stems", "vocals",
     "-d", "cuda",
     INPUT_AUDIO
-]
+]  
 
 subprocess.run(cmd, check=True)
  
